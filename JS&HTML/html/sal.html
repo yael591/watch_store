@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>עגלת הקניות</title>
+    <link rel="stylesheet" href="../css/disign.css">
+    <script src="../js/sal.js" defer></script>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* צבע רקע כללי */
+    color: #333; /* צבע טקסט כללי */
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000; /* שחור */
+    color: #fff; /* לבן */
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+.cart {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff; /* שמנת */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table thead {
+    background-color: #000; /* שחור */
+    color: #fff; /* לבן */
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd; /* גבול בהיר */
+    text-align: center;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* צבע רקע שורות זוגיות */
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #fff; /* צבע רקע שורות אי זוגיות */
+}
+
+#total-amount {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+button {
+    background-color: #000; /* שחור */
+    color: #fff; /* לבן */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #444; /* שחור כהה */
+}
+    </style>
+</head>
+<header id="header">
+    <h1><img src="../pic/מרכז השעונים.png" width="30%" height="18%"></h1>
+    <div>
+        <ul>
+            <li class="thispage">
+                <a href="./progect.html">דף הבית</a>
+            </li>
+            <li>
+                <a href="./conect.html">התחברות</a>
+            </li>
+            <li>
+                <a href="./login.html">הרשמה</a>
+            </li>
+            <li>
+                <a href="./sal.html">עגלת הקניות</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<body>
+    <main>
+        <section class="cart">
+            <h2>עגלת קניות</h2>
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>תמונה</th>
+                        <th>שם מוצר</th>
+                        <th>מחיר</th>
+                        <th>כמות</th>
+                        <th>סך הכל</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- שורות המוצרים יתוספו כאן באופן דינמי -->
+                </tbody>
+            </table>
+            <p id="total-amount">סה"כ לתשלום: 0 ש"ח</p>
+            <button id="complete-purchase">סיום קנייה</button>
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    direction: rtl;
+    margin: 0;
+}
+
+header {
+   
+        position: sticky; /* מוודא שה-header נשאר קבוע בזמן הגלילה */
+        top: 0;
+        left: 0;
+        width: 100%; /* תופס את כל רוחב הדף */
+        background-color: #000; /* צבע רקע שחור */
+        color: #fff; /* צבע טקסט לבן */
+        padding: 10px 0;
+        z-index: 1000; /* וודא שה-header יהיה מעל כל תוכן אחר */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    
+   
+}
+
+header h1 img {
+    width: 20%;
+    height: auto;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header li {
+    display: inline;
+}
+
+header a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+header a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+main {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    /* background-color: #fff; */
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px;
+    width: 220px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-size: 1.4em;
+    color: #000;
+    margin-top: 10px;
+}
+
+.product-card .old-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.product-card .details-button,
+.product-card .cart-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-card .cart-button {
+    background-color: #333;
+}
+
+.product-card .details-button:hover,
+.product-card .cart-button:hover {
+    background-color: #555;
+}
+
+    
+    /* עיצוב למסכים קטנים יותר */
+    @media (max-width: 767px) {
+        .container {
+            width: 100%;
+            padding: 0 10px;
+        }
+        
+        header img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            width: 750px;
+            margin: 0 auto;
+        }
+    }
